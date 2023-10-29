@@ -27,7 +27,7 @@ void loop()
 
   if(temMovimento)
   {
-	  luzesBuzzer(valor);
+	  encenderluzesBuzzer(valor);
     Serial.println("¡Hay aves!");
   }
   else{
@@ -35,7 +35,7 @@ void loop()
   }
 }
 
-void luzesBuzzer(int frequency)
+void encenderluzesBuzzer(int frequency)
 {
     //leds
     digitalWrite(led, HIGH);
